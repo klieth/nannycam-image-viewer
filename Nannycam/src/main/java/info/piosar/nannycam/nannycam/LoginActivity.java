@@ -89,7 +89,7 @@ public class LoginActivity extends ActionBarActivity {
                 Log.d("LoginTask","Passed USER stage");
                 // Do the PASS portion
                 os.write("PASS pass".getBytes());
-                f = 0; s;
+                f = 0;
                 while ((s = is.read()) > -1) {
                     if ((char)s == 'o') {
                         f = s;
